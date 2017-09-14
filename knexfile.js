@@ -1,4 +1,5 @@
 // Update with your config settings.
+var env = require('dotenv').config()
 
 module.exports = {
 
