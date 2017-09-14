@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var knex = require('../db/knex');
-var queries = require('../db/queries')
+var knex = require('../db/knex.js');
+var queries = require('../db/queries.js')
 
 function validMovies(movies) {
   const hasTitle = typeof movies.Title == 'string' && movies.Title.trim() != '';
