@@ -9,21 +9,21 @@ exports.seed = function(knex, Promise) {
         Director: "Steven Soderbergh",
         Year: 1976,
         My_Rating: 4,
-        url:"http://www.imdb.com/title/tt0117561/mediaviewer/rm2174000896"
+        url:"https://images-na.ssl-images-amazon.com/images/M/MV5BOTY3ODkzMDM2NF5BMl5BanBnXkFtZTgwNjI1NjIzMzI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
         },
         {
           Title: "Nashville",
           Director: "Robert Altman",
           Year: 1976,
           My_Rating: 5,
-          url: "http://www.imdb.com/title/tt2281375/mediaviewer/rm1467745280"
+          url: "https://images-na.ssl-images-amazon.com/images/M/MV5BOTY3ODkzMDM2NF5BMl5BanBnXkFtZTgwNjI1NjIzMzI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
         },
         {
           Title: "Idiocracy",
           Director: "Mike Judge",
           Year: 2006,
           My_Rating: 5,
-          url: "http://www.imdb.com/title/tt0387808/mediaviewer/rm1934300160"
+          url: "https://images-na.ssl-images-amazon.com/images/M/MV5BOTY3ODkzMDM2NF5BMl5BanBnXkFtZTgwNjI1NjIzMzI@._V1_SY1000_CR0,0,674,1000_AL_.jpg"
         },
       ]);
     });

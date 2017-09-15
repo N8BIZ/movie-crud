@@ -66,9 +66,13 @@ section {
 .table {
     border-radius: 5px;
     width: 80%;
-    height: 600px;
+    height: 100%;
     margin: 0px auto;
     float: none;
+}
+
+thead#items_table{
+  height: 100%
 }
 
 .divider{
