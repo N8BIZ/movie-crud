@@ -41,15 +41,10 @@ router.post('/movies', (req, res, next) => {
   }
 });
 
-router.put('/movies/:id', (req, res, next) => {
-  if(validMovies(req.body)) {
-    //update the movie
+router.put('/movies/:id', (req, res) => {
     queries.update(req.params.id, req.body).then(movies => {
       res.json(movies[0])
-    })
-  } else {
-     next(new Error('Invalid Movie'))
-  }
+});
 });
 
 router.delete('/movies/:id', (req, res) => {

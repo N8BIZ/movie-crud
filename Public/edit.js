@@ -1,10 +1,10 @@
-const movieAPI = "https://movie-crud-n8.herokuapp.com/movies"
+const movieAPII = "https://movie-crud-n8.herokuapp.com/movies"
 
 $(() => {
   const parsedParts = window.location.search.split('=')
   const id = parsedParts[1];
 
-  $.get(`${movieAPI}/${id}`)
+  $.get(`${movieAPII}/${id}`)
     .then(edit => {
       $('#img').attr('src', edit.url);
       $('#url').val(edit.url);
@@ -19,13 +19,13 @@ $(() => {
           $.ajax({
             type: 'PUT',
             dataType: 'json',
-            url: `${movieAPI}/${id}`,
+            url: `${movieAPII}/${id}`,
             data: {
               url: $('#url').val(),
               Title: $('#title').val(),
               Director: $('#director').val(),
               Year: $('#year').val(),
-              My_Rating: $('#myrating').val(),
+              My_Rating: $('#myrating').val()
             },
         }).then(result => {
           window.location = `home.html?id=${id}`;
