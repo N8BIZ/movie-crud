@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Edit Movie Page</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.js"  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="edit.js"></script>
-  </head>
-  <body class="new">
-    <header>
-      <h1>N8's Movie Ratings</h1>
-      <h2>R8, H8, or EL8!</h2>
-    </header>
-    <div class="Add">
-      <span class="addamovie">Add A Movie</span>
+<head>
+  <meta charset="utf-8">
+  <title>Edit Movie Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="new">
+  <header>
+    <h1>N8's Movie Ratings</h1>
+    <h2>R8, H8, or EL8!</h2>
+  </header>
+  <div class="Add">
+    <span class="addamovie">Add A Movie</span>
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="img"></label>
+      <img id="img">
+      <label for="url">Poster URL</label>
+      <input type="url" class="form-control" id="url">
     </div>
-    <form>
-      <div class="form-group">
-        <label for="img"></label>
-        <img id="img">
-        <label for="url">Poster URL</label>
-        <input type="url" class="form-control" id="url">
-      </div>
-  <div class="form-group">
-    <label for="title">Title</label>
-    <input type="title" class="form-control" id="title" aria-describedby="titleHelp">
-  </div>
-  <div class="form-group col-md-6">
-    <label for="director">Director</label>
-    <input type="directorname" class="form-control" id="director">
-  </div>
-  <div class="form-group col-md-6">
-    <label for="year">Year</label>
-    <input type="year" class="form-control" id="year">
-  </div>
-  <div class="form-group">
-    <label for="myrating">My Rating</label>
-    <input type="rating" class="form-control" id="myrating">
-  </div>
-  <button id="editButton" type="submit" class="btn btn-primary">Edit Movie</button>
-</form>
-    <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-  </body>
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="title" class="form-control" id="title" aria-describedby="titleHelp">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="director">Director</label>
+      <input type="directorname" class="form-control" id="director">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="year">Year</label>
+      <input type="year" class="form-control" id="year">
+    </div>
+    <div class="form-group">
+      <label for="myrating">My Rating</label>
+      <input type="rating" class="form-control" id="myrating">
+    </div>
+    <button id="editButton" type="submit" class="btn btn-primary">Edit Movie</button>
+  </form>
+  <script type="text/javascript" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="edit.js"></script>
+</body>
 </html>
